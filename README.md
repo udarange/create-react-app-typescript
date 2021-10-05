@@ -1,3 +1,4 @@
+
 # Setup TypeScript + ESLint + Prettier + AirBnB Style with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -125,4 +126,15 @@ In the project directory, you can run:
 2. `npm run build`
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# SASS
+
+**Sass provides much more power with features like**:
+
+-   Variables
+-   Nesting
+-   Mixins
+
+file extention
+> .scss
 
