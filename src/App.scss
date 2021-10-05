@@ -1,4 +1,18 @@
+$red: rgba(65, 255, 0, 0.8);
+
+@mixin flex-style {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin color-handler($color) {
+  display: flex;
+  flex-direction: column;
+  color: $color;
+}
+
 .App {
+  @include flex-style;
   text-align: center;
 }
 
@@ -14,14 +28,20 @@
 }
 
 .App-header {
+  @include color-handler(white);
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
+  p {
+    color: $red;
+
+    :hover {
+      color: yellow;
+    }
+  }
 }
 
 .App-link {
